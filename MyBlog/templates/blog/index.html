@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% from 'bootstrap/pagination.html' import render_pagination%}
+
+{% block title %}主页{% endblock title%}
+
+{% block content %}
+<div class="row">
+    <div class="container ">
+        {% include 'blog/_post.html'%}
+        {% if posts %}
+            {{ render_pagination(pagination) }}
+        {% endif %}
+    </div>
+</div>
+{% endblock content%}

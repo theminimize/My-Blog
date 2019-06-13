@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% from 'bootstrap/form.html' import render_form %}
+
+{% block title%}登录{% endblock title %}
+
+{% block content %}
+    <div class="container ">
+        <div class="row justify-content-center page-header">
+            <h1>登录</h1>
+        </div>
+        <!--
+        <div class="row justify-content-center">
+            {{ render_form(form, extra_classes='col-6') }}
+        </div>
+        -->
+        <div class="row">
+            <div class="col-sm-6 mx-auto">
+                <form method="post">
+                    {{ form.csrf_token }}
+                    <div class="form-group ">
+                        {{ form.username.label }}
+                        {{ form.username(class='form-control rounded-0') }}
+                    </div>
+                    <div class="form-group ">
+                        {{ form.password.label }}
+                        {{ form.password(class='form-control rounded-0') }}
+                    </div>
+                    <div class="form-check">
+                        {{ form.remember(class='form-check-input') }}
+                        {{ form.remember.label }}
+                    </div>
+                        {{ form.submit(class='btn btn-dark rounded-0') }}
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block footer %}
+{% endblock footer %}

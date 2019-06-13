@@ -1,0 +1,19 @@
+{% if posts %}
+    <ul class="list-group">
+        {% for post in posts %}
+        <li class="list-group-item border border-0" id="list-group-padding">
+            <h2><a href="{{ url_for('.show_post', post_id=post.id)}}" class="text-dark">{{ post.title }}</a></h2>
+            <p >{{ post.body|truncate(length=300)|safe }}
+                <a href="#"><small>read more</small></a>
+            </p>
+            <!--<p><small> {{ post.timestamp }}</small></p>-->
+            <p class="text-muted"><small>{{ moment(post.timestamp).format('LL') }}</small></p>
+        </li>
+        {% endfor %}
+    </ul>
+{% else %}
+<!-- 没有文章时,则tip提示无文章 -->
+    <div class="tip">
+        <h5>这里一篇文章也没有...</h5>
+    </div>
+{% endif %}

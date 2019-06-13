@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a97d4935-5d27-4ea7-a91b-b10f3ec92a93" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.flaskenv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/MyBlog.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/blueprint/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/blueprint/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/blueprint/blog.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/blueprint/login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/emails.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/extensions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/fakes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/CHANGES.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/adapters/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/build-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/ckeditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/contents.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/bn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/about/dialogs/about.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/about/dialogs/logo_ckeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/clipboard/dialogs/paste.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/dialogs/codesnippet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/icons/codesnippet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/icons/hidpi/codesnippet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/codesnippet/samples/codesnippet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/dialog/dialogDefinition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filebrowser/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/dev/uploaddebugger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/filetools/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/image/dialogs/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/image/images/noimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/link/dialogs/anchor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/link/dialogs/link.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/link/images/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/link/images/hidpi/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/magicline/images/hidpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/magicline/images/icon-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/magicline/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/pastefromword/filter/default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/popup/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/scayt/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/scayt/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/scayt/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/scayt/dialogs/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/scayt/dialogs/options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/scayt/dialogs/toolbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/specialchar/dialogs/specialchar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/table/dialogs/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/tableselection/styles/tableselection.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/tabletools/dialogs/tableCell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/widget/images/handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/wsc/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/wsc/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/wsc/dialogs/ciframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/wsc/dialogs/wsc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/wsc/dialogs/wsc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/wsc/dialogs/wsc_ie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/css/samples.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/img/github-top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/img/header-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/img/header-separator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/img/navigation-tip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/js/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/js/sf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/ajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/api.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/appendto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/assets/inlineall/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/assets/posteddata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/assets/sample.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/assets/uilanguages/languages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/datafiltering.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/dialog/assets/my_dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/dialog/dialog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/divreplace.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/enterkey/enterkey.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/htmlwriter/outputforflash.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/htmlwriter/outputhtml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/inlineall.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/inlinebycode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/inlinetextarea.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/jquery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/magicline/magicline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/readonly.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/replacebyclass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/replacebycode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/sample.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/sample_posteddata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/tabindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/toolbar/toolbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/uicolor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/uilanguages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/wysiwygarea/fullpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/old/xhtmlstyle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/toolbarconfigurator/css/fontello.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/toolbarconfigurator/font/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/toolbarconfigurator/font/fontello.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/toolbarconfigurator/font/fontello.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/toolbarconfigurator/font/fontello.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/toolbarconfigurator/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/dialog_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/dialog_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/dialog_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/editor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/editor_gecko.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/editor_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/editor_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/editor_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/images/hidpi/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/images/hidpi/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/images/hidpi/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/images/hidpi/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/images/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/images/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/images/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/images/spinner.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/skins/moono-lisa/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/ckeditor/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/css/black_swan.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/css/perfect_blue.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/js/jquery-3.2.1.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/js/moment-with-locales.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/static/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/templates/admin/edit_category.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/templates/admin/edit_post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/templates/admin/manage_category.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/templates/admin/manage_comments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/templates/admin/manage_post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/templates/admin/new_category.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/templates/admin/new_post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/templates/admin/settings.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/templates/blog/_post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/templates/blog/category.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/templates/blog/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/templates/blog/post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/templates/login/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBlog/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myblog.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyBlog/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1716">
+              <caret line="78" column="27" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyBlog/templates/blog/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyBlog/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-260">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyBlog/templates/blog/post.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2332">
+              <caret line="106" column="27" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MyBlog/blueprint/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="216" column="65" selection-start-line="216" selection-start-column="65" selection-end-line="216" selection-end-column="65" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyBlog/templates/admin/new_post.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyBlog/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="30" column="76" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyBlog/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyBlog/templates/blog/_post.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyBlog/templates/blog/category.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/MyBlog/exstentions.py" />
+        <option value="$PROJECT_DIR$/MyBlog/email.py" />
+        <option value="$PROJECT_DIR$/MyBlog/blueprint/blo.py" />
+        <option value="$PROJECT_DIR$/MyBlog/templates/login/login.html" />
+        <option value="$PROJECT_DIR$/MyBlog/blueprint/blog.py" />
+        <option value="$PROJECT_DIR$/MyBlog/extensions.py" />
+        <option value="$PROJECT_DIR$/MyBlog/__init__.py" />
+        <option value="$PROJECT_DIR$/MyBlog/fakes.py" />
+        <option value="$PROJECT_DIR$/MyBlog/templates/admin/edit_post.html" />
+        <option value="$PROJECT_DIR$/MyBlog/templates/admin/manage_post.html" />
+        <option value="$PROJECT_DIR$/MyBlog/templates/admin/edit_category.html" />
+        <option value="$PROJECT_DIR$/MyBlog/templates/admin/manage_comments.html" />
+        <option value="$PROJECT_DIR$/MyBlog/models.py" />
+        <option value="$PROJECT_DIR$/MyBlog/templates/blog/post.html" />
+        <option value="$PROJECT_DIR$/MyBlog/blueprint/login.py" />
+        <option value="$PROJECT_DIR$/MyBlog/utils.py" />
+        <option value="$PROJECT_DIR$/MyBlog/templates/admin/new_category.html" />
+        <option value="$PROJECT_DIR$/MyBlog/templates/admin/manage_category.html" />
+        <option value="$PROJECT_DIR$/MyBlog/templates/admin/settings.html" />
+        <option value="$PROJECT_DIR$/MyBlog/templates/blog/category.html" />
+        <option value="$PROJECT_DIR$/MyBlog/static/css/style.css" />
+        <option value="$PROJECT_DIR$/MyBlog/templates/blog/index.html" />
+        <option value="$PROJECT_DIR$/MyBlog/templates/base.html" />
+        <option value="$PROJECT_DIR$/MyBlog/templates/blog/_post.html" />
+        <option value="$PROJECT_DIR$/MyBlog/forms.py" />
+        <option value="$PROJECT_DIR$/MyBlog/templates/admin/new_post.html" />
+        <option value="$PROJECT_DIR$/MyBlog/settings.py" />
+        <option value="$PROJECT_DIR$/MyBlog/blueprint/admin.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="156" />
+    <option name="y" value="117" />
+    <option name="width" value="1588" />
+    <option name="height" value="777" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="blueprint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a97d4935-5d27-4ea7-a91b-b10f3ec92a93" name="Default Changelist" comment="" />
+      <created>1559698938030</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559698938030</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="32" width="1853" height="1048" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17898194" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13464697" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MyBlog/blueprint/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/emails.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/extensions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="e#1#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/fakes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="737">
+          <caret line="95" column="23" lean-forward="true" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="56" column="14" lean-forward="true" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/templates/admin/edit_post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="49" column="53" selection-start-line="49" selection-start-column="53" selection-end-line="49" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/templates/admin/edit_category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/templates/admin/manage_comments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1474">
+          <caret line="67" column="87" selection-start-line="67" selection-start-column="87" selection-end-line="67" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/templates/admin/manage_post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="115" selection-start-line="10" selection-start-column="115" selection-end-line="10" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/blueprint/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-77">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/templates/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/blueprint/blog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/templates/admin/new_category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/templates/admin/manage_category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/templates/admin/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/templates/blog/category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1716">
+          <caret line="78" column="27" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/templates/blog/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2332">
+          <caret line="106" column="27" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/templates/blog/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/templates/blog/_post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" column="76" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/templates/admin/new_post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-260">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/blueprint/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="216" column="65" selection-start-line="216" selection-start-column="65" selection-end-line="216" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

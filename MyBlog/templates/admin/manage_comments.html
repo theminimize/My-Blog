@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% from 'bootstrap/pagination.html' import render_pagination %}
+
+{% block title %}管理评论{% endblock %}
+
+{% block content %}
+    <div class="page-header">
+        <h1>评论数：
+            <small class="text-muted">{{ pagination.total }}</small>
+        </h1>
+
+        <!-- 设置评论筛选过滤导航栏 -->
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Filter </a>
+            </li>
+            <li class="nav-item">
+                <!-- request.args.get('filter', 'all')获取查询参数filter -->
+                <a class="nav-link {% if request.args.get('filter', 'all') == 'all' %}active{% endif %}"
+                   href="{{ url_for('admin.manage_comments', filter='all') }}">全部</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {% if request.args.get('filter') == 'unread' %}active{% endif %}"
+                   href="{{ url_for('admin.manage_comments', filter='unread') }}">未读 {% if unread_comments %}
+                    <!-- 设置未审核评论徽章 -->
+                    <span class="badge badge-success">{{ unread_comments }}</span>{% endif %}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {% if request.args.get('filter') == 'admin' %}active{% endif %}"
+                   href="{{ url_for('admin.manage_comments', filter='admin') }}">管理员</a>
+            </li>
+        </ul>
+    </div>
+
+    {% if comments %}
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>No.</th>
+                <th>作者</th>
+                <th>来自文章</th>
+                <th>内容</th>
+                <th>日期</th>
+                <th>操作状态</th>
+            </tr>
+            </thead>
+            {% for comment in comments %}
+                <!-- 如果comment未审核,则table表格颜色为warning黄色 -->
+                <tr {% if not comment.reviewed %}class="table-warning" {% endif %}>
+                    <td>{{ loop.index + ((pagination.page - 1) * config['MYBLOG_MANAGE_COMMENT_PER_PAGE']) }}</td>
+                    <td>
+                        <!-- 显示评论作者名及来源url -->
+                        {% if comment.from_admin %}{{ admin.name }}{% else %}{{ comment.author }}{% endif %}<br>
+                        <!-- 管理员评论徽章 -->
+                        {% if comment.from_admin %}
+                            <span class="badge badge-primary">Author</span>
+                        {% endif %}
+                    </td>
+                    <td>{{ comment.post.title }}</td>
+                    <td>{{ comment.body }}</td>
+                    <td>{{ moment(comment.timestamp).format('LL') }}</td>
+                    <td>
+                        <!-- 未审核添加approve审核标签 -->
+                        {% if not comment.reviewed %}
+                            <form class="inline" method="post"
+                                  action="{{ url_for('.approve_comments', comment_id=comment.id, next=request.full_path) }}">
+                                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                                <button type="submit" class="btn btn-success btn-sm">已读</button>
+                            </form>
+                        {% endif %}
+                        <form class="inline" method="post"
+                              action="{{ url_for('.delete_comments', comment_id=comment.id, next=request.full_path) }}">
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                            <button type="submit" class="btn btn-danger btn-sm"
+                                    onclick="return confirm('Are you sure?');">删除
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+        <div class="page-footer">{{ render_pagination(pagination) }}</div>
+    {% else %}
+        <div class="tip"><h5>这里一条评论也没有...</h5></div>
+    {% endif %}
+{% endblock %}

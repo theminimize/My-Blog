@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% from 'bootstrap/pagination.html' import render_pagination %}
+{% from 'bootstrap/form.html' import render_form %}
+
+{% block title %}详情{% endblock title %}
+
+{% block content %}
+<div class="row">
+    <div class="col-sm-10 mx-auto">
+        <div class="page-header">
+            <h1>{{ post.title }}</h1>
+        </div>
+        <div class="">
+            <span class="body-font">{{ post.body|safe }}</span>
+            <p><small>分类： {{ post.category.name }}</small></p>
+            <small>日期： {{ moment(post.timestamp).format('LLL') }}</small>
+        </div>
+        <hr>
+        <div>
+            <button type="button" class="btn btn-warning ">Like</button>
+            <!-- <button type="button" class="btn btn-primary float-right">Share</button> -->
+        </div>
+        <div class="comments" id="comments">
+                <h3>评论数：{{ pagination.total }}
+                    <!-- 如果管理员已登录，显示以下按钮(表单包裹按钮旨在防范CSRF攻击) -->
+                    {% if current_user.is_authenticated %}
+                    <form method="post"
+                          action="{{ url_for('admin.set_comment', post_id=post.id, next=request.full_path) }}"
+                        class="float-right">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                        <button type="submit" class="btn btn-danger btn-sm">
+                            {% if post.can_comments %}关闭{% else %}开启{% endif %}评论
+                        </button>
+                    </form>
+                    {% endif %}
+                </h3>
+                <!-- 评论列表组 -->
+                {% if comments %}
+                    <ul class="list-group">
+                        {% for comment in comments %}
+                        <!-- flex弹性盒子,flex-column子元素垂直方向显示 -->
+                            <li class="list-group-item list-group-item-action flex-column">
+                                <!-- w-100:width:100%,justify-content-between：内容排列方式 -->
+                                <div class="d-flex w-100 justify-content-between">
+                                    <!-- mb-1:margin-button -->
+                                    <h5 class="mb-1 text-primary">
+                                            <!-- 这里用于判定，如果评论为管理员则admin.name作为评论者名字，否则用comment.author -->
+                                            {% if comment.from_admin %}
+                                                {{ admin.name }}
+                                            {% else %}
+                                                {{ comment.author }}
+                                            {% endif %}
+                                        </a>
+                                        <!-- 管理员评论添加Author徽章 -->
+                                        {% if comment.from_admin %}
+                                            <span class="badge badge-primary">作者</span>{% endif %}
+                                        <!-- 当评论是一个回复时,则显示一个Reply提示标签 -->
+                                        {% if comment.replied %}<span class="badge badge-light">Reply</span>{% endif %}
+                                    </h5>
+                                    <small data-toggle="tooltip" data-placement="top" data-delay="500"
+                                           data-timestamp="{{ comment.timestamp.strftime('%Y-%m-%dT%H:%M:%SZ') }}">
+                                        {{ moment(comment.timestamp).fromNow() }}
+                                    </small>
+                                </div>
+                                <!-- 判断是否回复；comment.replied.id表示被回复评论的作者,br表示换行 -->
+                                {% if comment.replied %}
+                                    <p class="alert alert-dark reply-body">{{ comment.replied.author }}:
+                                        <br>{{ comment.replied.body }}
+                                    </p>
+                                {%- endif -%}
+                                <!-- 评论主体 -->
+                                <p class="mb-1">{{ comment.body }}</p>
+                                <!-- float-right:靠右悬浮 -->
+                                <div class="float-right">
+                                    <a class="btn btn-light btn-sm"
+                                       href="{{ url_for('.reply_comment', comment_id=comment.id) }}">回复</a>
+                                    {% if current_user.is_authenticated %}
+                                    <form class="inline" method="post"
+                                              action="{{ url_for('admin.delete_comments',
+                                               comment_id=comment.id, next=request.full_path) }}">
+                                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                                            <button type="submit" class="btn btn-danger btn-sm"
+                                                    onclick="return confirm('确定删除该评论?');">删除
+                                            </button>
+                                    </form>
+                                    {% endif %}
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <div class="tip"><h5>这里还没有评论...</h5></div>
+                {% endif %}
+            </div>
+        {% if comments %}
+            {{ render_pagination(pagination, fragment='#comments') }}
+        {% endif %}
+        {% if request.args.get('reply')%}
+            <div class="alert alert-dark ">
+                回复：<strong>{{ request.args.get('author') }}</strong>
+                <a class="float-right " href="{{ url_for('.show_post', post_id=post.id )}}">取消回复</a>
+            </div>
+        {% endif %}
+        {% if post.can_comments %}
+            {{ render_form(form, action=request.full_path) }}
+        {% else %}
+            <div class="tip">
+                <p>评论区已关闭</p>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock content %}
+
+
