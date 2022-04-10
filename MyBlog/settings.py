@@ -10,7 +10,7 @@ basedir = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))   # 找到
 >>> os.path.abspath(os.path.dirname(os.path.dirname('~/Flask_hj/MyBlog/MyBlog/settings.py')))
 '/home/zijian-computer/Flask_hj/MyBlog/MyBlog/~/Flask_hj/MyBlog'
 '''
-prefix = 'sqlite:////'
+prefix = 'sqlite:///'
 
 
 # 基本配置类

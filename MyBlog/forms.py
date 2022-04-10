@@ -1,4 +1,4 @@
-from flask_wtf import Form
+from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, BooleanField, SubmitField, TextAreaField, SelectField, ValidationError
 from wtforms.validators import DataRequired, Length
 from flask_ckeditor import CKEditorField
@@ -6,7 +6,7 @@ from MyBlog.models import Category
 
 
 # 登录表单
-class LoginForm(Form):
+class LoginForm(FlaskForm):
     username = StringField('用户名', validators=[DataRequired()])
     password = PasswordField('密码', validators=[DataRequired(), Length(1, 32)])
     remember = BooleanField('记住我')
@@ -14,14 +14,14 @@ class LoginForm(Form):
 
 
 # 评论表单
-class CommentForm(Form):
+class CommentForm(FlaskForm):
     name = StringField('昵称', validators=[DataRequired()])
     comment = TextAreaField('评论内容', validators=[DataRequired(), Length(1, 256)])
     submit = SubmitField('发布评论')
 
 
 # 设置表单
-class SettingForm(Form):
+class SettingForm(FlaskForm):
     blog_title = StringField('博客名称', validators=[DataRequired()])
     name = StringField('昵称', validators=[DataRequired(), Length(1, 20)])
     about = TextAreaField('关于', validators=[DataRequired()])
@@ -29,7 +29,7 @@ class SettingForm(Form):
 
 
 # 新增文章
-class PostForm(Form):
+class PostForm(FlaskForm):
     title = StringField('标题', validators=[DataRequired()])
     category = SelectField('分类', coerce=int, default=1)
     body = CKEditorField('正文', validators=[DataRequired()])
@@ -44,7 +44,7 @@ class PostForm(Form):
 
 
 # 新增分类
-class CategoryForm(Form):
+class CategoryForm(FlaskForm):
     name = StringField('分类名', validators=[DataRequired()])
     submit = SubmitField('提交')
 
